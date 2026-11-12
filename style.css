@@ -134,7 +134,7 @@ section { scroll-margin-top: 24px; }
 
 /* photos */
 .banner { margin: 0; }
-.banner img { display: block; width: 100%; height: auto; aspect-ratio: 1800 / 783; object-fit: cover; max-height: 560px; }
+.banner img { display: block; width: 100%; height: auto; aspect-ratio: 1800 / 625; object-fit: cover; max-height: 420px; }
 .banner figcaption, .photo figcaption { font-family: var(--label); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); }
 .banner figcaption { padding-block: 10px 0; }
 .photo { margin: 0 0 16px; }
