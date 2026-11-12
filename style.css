@@ -128,9 +128,23 @@ section { scroll-margin-top: 24px; }
 .article .inner { max-width: 720px; padding-block: 64px 80px; }
 .article .meta { font-family: var(--label); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); margin: 18px 0 40px; }
 .article p { font-size: 19px; line-height: 1.75; margin: 0 0 22px; }
-.article .meta + p::first-letter { font-family: var(--display); float: left; font-size: 64px; line-height: .9; padding: 6px 10px 0 0; color: var(--pasture); }
+.article .meta + p::first-letter, .article .post-img + p::first-letter { font-family: var(--display); float: left; font-size: 64px; line-height: .9; padding: 6px 10px 0 0; color: var(--pasture); }
 .article .sign { font-family: var(--display); font-style: italic; font-size: 22px; margin-top: 36px; }
 .back { font-family: var(--label); font-size: 14px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; }
+
+/* photos */
+.banner { margin: 0; }
+.banner img { display: block; width: 100%; height: auto; aspect-ratio: 1800 / 783; object-fit: cover; max-height: 560px; }
+.banner figcaption, .photo figcaption { font-family: var(--label); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); }
+.banner figcaption { padding-block: 10px 0; }
+.photo { margin: 0 0 16px; }
+.photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+.photo figcaption { margin-top: 8px; }
+.story-side { display: grid; gap: 28px; }
+.card img { display: block; width: calc(100% + 52px); max-width: none; margin: -28px -26px 8px; aspect-ratio: 4 / 3; height: auto; object-fit: cover; border-radius: 4px 4px 0 0; }
+.exp-img { display: block; width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; border-radius: 4px; margin-top: 16px; }
+.post-img { display: block; width: 100%; height: auto; border-radius: 4px; margin: 0 0 36px; }
+.exp { grid-template-columns: minmax(0, 280px) minmax(0, 1fr); }
 
 /* contact */
 .contact { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin: 0; max-width: 760px; }
