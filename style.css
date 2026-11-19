@@ -173,3 +173,22 @@ footer .inner { padding-block: 28px 40px; display: flex; flex-wrap: wrap; gap: 8
   .nav a { font-size: 12px; }
   .article p { font-size: 18px; }
 }
+
+/* article headings and lists */
+.article h2 { font-size: 28px; margin: 48px 0 18px; }
+.article ul, .article ol { font-size: 19px; line-height: 1.7; margin: 0 0 22px; padding-left: 1.3em; }
+.article li { margin-bottom: 10px; }
+.article li::marker { color: var(--pasture); }
+.article .further { font-size: 16px; color: var(--soft); border-top: 1px solid var(--rule); padding-top: 20px; margin-top: 40px; }
+
+/* latest post on home page */
+.latest .inner { padding-block: 56px; }
+.latest h2 { font-size: 32px; margin-bottom: 14px; }
+.latest .lede { margin-top: 0; }
+.latest-link { margin: 22px 0 0; font-family: var(--label); font-size: 14px; letter-spacing: .12em; text-transform: uppercase; }
+.latest-link a { text-decoration: none; border-bottom: 1px solid var(--pasture); padding-bottom: 3px; }
+@media (max-width: 760px) {
+  .article h2 { font-size: 24px; }
+  .article ul, .article ol { font-size: 18px; }
+  .latest h2 { font-size: 26px; }
+}
