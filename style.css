@@ -192,3 +192,9 @@ footer .inner { padding-block: 28px 40px; display: flex; flex-wrap: wrap; gap: 8
   .article ul, .article ol { font-size: 18px; }
   .latest h2 { font-size: 26px; }
 }
+
+/* photos inside posts */
+.post-fig { margin: 8px 0 32px; }
+.post-fig img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.post-fig.portrait img { max-width: 420px; margin-inline: auto; }
+.post-fig figcaption { font-size: 14px; color: var(--soft); margin-top: 10px; }
