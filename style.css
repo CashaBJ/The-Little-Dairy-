@@ -198,3 +198,21 @@ footer .inner { padding-block: 28px 40px; display: flex; flex-wrap: wrap; gap: 8
 .post-fig img { display: block; width: 100%; height: auto; border-radius: 4px; }
 .post-fig.portrait img { max-width: 420px; margin-inline: auto; }
 .post-fig figcaption { font-size: 14px; color: var(--soft); margin-top: 10px; }
+/* beef page */
+.boxes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 880px; }
+.boxes ul { margin: 6px 0 0; padding-left: 1.2em; color: var(--soft); display: grid; gap: 6px; }
+.boxes li::marker { color: var(--pasture); }
+.card .box-price { font-family: var(--display); font-size: 34px; color: var(--pasture) !important; line-height: 1.2; }
+.card .box-price span { display: block; font-family: var(--body); font-size: 15px; color: var(--soft); }
+.note { color: var(--soft); font-size: 16px; margin: 24px 0 0; max-width: 38em; }
+.table-wrap { overflow-x: auto; max-width: 720px; }
+.price-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.price-table th, .price-table td { text-align: left; padding: 14px 12px; border-bottom: 1px solid var(--rule); font-weight: 400; }
+.price-table thead th { font-family: var(--label); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--soft); }
+.price-table tbody th { font-family: var(--display); font-size: 19px; }
+.price-table tbody th span { display: block; font-family: var(--body); font-size: 14px; color: var(--soft); }
+.price-table .num { text-align: right; white-space: nowrap; }
+@media (max-width: 760px) {
+  .boxes { grid-template-columns: 1fr; }
+  .price-table th, .price-table td { padding: 12px 6px; }
+}
