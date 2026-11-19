@@ -238,3 +238,12 @@ footer .inner { padding-block: 28px 40px; display: flex; flex-wrap: wrap; gap: 8
 #cookie-banner button:focus-visible { outline: 2px solid var(--pasture); outline-offset: 2px; }
 .cookie-table td, .cookie-table th { font-size: 15px; vertical-align: top; }
 .privacy h2 { font-size: 26px; margin: 40px 0 14px; }
+
+/* photo rows on dairy and beef pages */
+.photo-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 40px; }
+.photo-row figure { margin: 0; }
+.photo-row img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+.photo-row figcaption { font-size: 14px; color: var(--soft); margin-top: 8px; }
+@media (max-width: 760px) { .photo-row { grid-template-columns: 1fr; gap: 20px; } }
+.photo-row.two { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 760px; }
+@media (max-width: 760px) { .photo-row.two { grid-template-columns: 1fr; } }
