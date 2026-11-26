@@ -253,3 +253,17 @@ footer .inner { padding-block: 28px 40px; display: flex; flex-wrap: wrap; gap: 8
 .comments h2 { font-size: 28px; margin: 0 0 10px; }
 .article .comments .comments-note { font-size: 16px; color: var(--soft); }
 #remarkbox-iframe { display: block; margin-top: 12px; }
+
+/* Booking buttons and booking terms */
+.btn { display: inline-block; background: var(--pasture); color: var(--pasture-ink); font-family: var(--label); font-size: 14px; letter-spacing: .16em; text-transform: uppercase; text-decoration: none; padding: 14px 26px 12px; border-radius: 999px; border: 1px solid var(--pasture); }
+.btn:hover, .btn:focus-visible { filter: brightness(1.08); }
+.btn.ghost { background: transparent; color: var(--pasture); }
+.exp .facts { list-style: none; padding: 0; margin: 18px 0 20px; color: var(--ink); gap: 4px; }
+.exp .facts strong { font-family: var(--label); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--soft); font-weight: 400; margin-right: 8px; }
+.exp .small { font-size: 15px; color: var(--soft); margin-top: 12px; }
+.book-online { margin: 0 0 36px; padding: 28px; background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; justify-content: space-between; }
+.book-online h3 { margin: 0 0 4px; font-size: 22px; }
+.book-online p { margin: 0; color: var(--soft); max-width: 34em; }
+.terms ol { padding-left: 1.2em; }
+.terms li { margin-bottom: 6px; }
+.book-online .tt-wrap { flex: 1 1 100%; min-width: 0; }
